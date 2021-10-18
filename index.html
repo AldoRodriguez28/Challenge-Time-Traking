@@ -30,9 +30,9 @@
       </div>
       <div class="footer">
         <ul>
-          <li>Daily</li>
-          <li>Weekly</li>
-          <li>Monthly</li>
+          <li onclick="daily()">Daily</li>
+          <li onclick="weekly()">Weekly</li>
+          <li onclick="monthly()">Monthly</li>
         </ul>
         
       </div>
@@ -46,12 +46,12 @@
         </figure>
         <div class="footer-card">
           <div class="title-cards">
-            <p>Work</p>
+            <p id="title-work">Work</p>
             <a href="">...</a>
           </div>
           <div class="foo-body">
-            <p class="horas"> 32hrs </p>
-            <p class="week"> Last Week - 36hrs</p>
+            <p id="work-current" class="horas"> 32hrs </p>
+            <p id="work-frecuency" class="week"> Last Week <span id="work-previus">36</span>hrs</p>
 
           </div>
 
@@ -65,12 +65,12 @@
         </figure>
         <div class="footer-card">
           <div class="title-cards">
-            <p>Play</p>
+            <p id="title-play">Play</p>
             <a href="">...</a>
           </div>
           <div class="foo-body">
-            <p class="horas"> 10hrs </p>
-            <p class="week"> Last Week - 8hrs</p>
+            <p id="play-current" class="horas"> 10hrs </p>
+            <p id="play-frecuency" class="week"> Last Week <span id="play-previus">36</span>hrs</p>
           </div>
         </div>
       </div>
@@ -82,12 +82,12 @@
         </figure>
         <div class="footer-card">
           <div class="title-cards">
-            <p>Study</p>
+            <p id="title-study">Study</p>
             <a href="">...</a>
           </div>
           <div class="foo-body">
-            <p class="horas"> 4hrs </p>
-            <p class="week"> Last Week - 7hrs</p>
+            <p  id="study-current" class="horas"> 4hrs </p>
+            <p id="study-frecuency" class="week"> Last Week - 7hrs</p>
           </div>
         </div>
       </div>
@@ -99,12 +99,12 @@
         </figure>
         <div class="footer-card">
           <div class="title-cards">
-            <p>Study</p>
+            <p id="title-exercise">Exercise</p>
             <a href="">...</a>
           </div>
           <div class="foo-body">
-            <p class="horas"> 4hrs </p>
-            <p class="week"> Last Week - 7hrs</p>
+            <p id="exercise-current" class="horas"> 4hrs </p>
+            <p id="exercise-frecuency" class="week"> Last Week - 7hrs</p>
           </div>
         </div>
       </div>
@@ -116,12 +116,12 @@
         </figure>
         <div class="footer-card">
           <div class="title-cards">
-            <p>Social</p>
+            <p id="title-social">Social</p>
             <a href="">...</a>
           </div>
           <div class="foo-body">
-            <p class="horas"> 5hrs </p>
-            <p class="week"> Last Week - 10hrs</p>
+            <p id="social-current" class="horas"> 5hrs </p>
+            <p id="social-frecuency" class="week"> Last Week - 10hrs</p>
           </div>
         </div>
       </div>
@@ -133,12 +133,12 @@
         </figure>
         <div class="footer-card">
           <div class="title-cards">
-            <p>Self Care</p>
+            <p id="title-selfCare">Self Care</p>
             <a href="">...</a>
           </div>
           <div class="foo-body">
-            <p class="horas"> 2hrs </p>
-            <p class="week"> Last Week - 2hrs</p>
+            <p id="selfCare-current" class="horas"> 2hrs </p>
+            <p id="selfCare-frecuency" class="week"> Last Week - 2hrs</p>
           </div>
         </div>
       </div>
@@ -158,5 +158,5 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
-<script src="./data.json"></script>
+<script src="./data.js"></script>
 </html>
